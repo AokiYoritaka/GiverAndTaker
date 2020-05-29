@@ -4,3 +4,4 @@ class Reaction < ApplicationRecord
 
     enum status: { like: 0, dislike: 1 }
 end
+    
