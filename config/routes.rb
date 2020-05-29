@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'tops#index'  
   resources :users, only: %i(index show)
   resources :reactions, only: %i(create)
+  resources :matchings, only: %i(index)
 end
