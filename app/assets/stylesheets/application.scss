@@ -24,3 +24,17 @@
 @import "users/edit";
 @import "jTinder";
 @import "matchings";
+@import "chat";
+
+.PassForgot h2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.field {
+    text-align: center;
+}
+.actions {
+    padding-left: 70px ;
+}

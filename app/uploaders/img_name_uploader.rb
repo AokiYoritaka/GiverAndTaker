@@ -1,7 +1,7 @@
 class ImgNameUploader < CarrierWave::Uploader::Base
     # Include RMagick or MiniMagick support:
     # include CarrierWave::RMagick
-    include CarrierWave::MiniMagick # ここのコメントアウトを外す
+    include CarrierWave::MiniMagick 
   
     # Choose what kind of storage to use for this uploader:
     storage :file
@@ -41,13 +41,12 @@ class ImgNameUploader < CarrierWave::Uploader::Base
     # Add a white list of extensions which are allowed to be uploaded.
     # For images you might use something like this:
   
-    # ここのコメントアウトを外す
     def extension_whitelist
       %w(jpg jpeg gif png)
     end
 
     def default_url
-       "techpit-march-icon.png"
+       "techpit-match-icon.png"
     end
   
     # Override the filename of the uploaded files:
