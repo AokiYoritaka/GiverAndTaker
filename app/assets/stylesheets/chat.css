@@ -1,0 +1,103 @@
+.chatPage input[type="text"]:focus {
+  outline: 0;
+}
+
+.chatPage .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.chatPage .header .linkToMatching {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 40px;
+  border: 5px solid;
+  border-radius: 4px;
+  border-color: transparent transparent #fd5068 #fd5068;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.chatPage .header .chatPartner_name {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chatPage .header .chatPartner_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chatPage .header .chatPartner_img > img {
+  width: 100%;
+}
+
+.chatPage .messagesArea {
+  overflow: scroll;
+  height: 72vh;
+}
+
+.chatPage .messagesArea .message {
+  margin-top: 24px;
+}
+
+.chatPage .messagesArea .message__name {
+  color: #45494B;
+}
+
+.chatPage .messagesArea .message__text {
+  position: relative;
+  display: inline-block;
+  margin-left: 16px;
+  padding: 8px 12px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.chatPage .messagesArea .message__text:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  margin-top: -10px;
+  border: 10px solid transparent;
+  border-right: 10px solid #f1f1f1;
+}
+
+.chatPage .messagesArea .message_current_user {
+  background: #fd5068;
+  color: #fff;
+}
+
+.chatPage .messagesArea .message_current_user:before {
+  border-right: 10px solid #fd5068;
+}
+
+.chatPage .messageInputForm {
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #e8e8e8;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.chatPage .messageInputForm_input {
+  width: 100%;
+  border: none;
+}
+/*# sourceMappingURL=chat.css.map */

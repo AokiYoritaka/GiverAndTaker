@@ -1,0 +1,9 @@
+.linkToLogin {
+  margin: 15px 0 15px;
+  text-align: center;
+}
+
+.linkToLogin > a {
+  color: #fd5068;
+}
+/*# sourceMappingURL=common.css.map */

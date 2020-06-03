@@ -1,0 +1,29 @@
+.loginPage_contents {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.loginPage_contents_title {
+  margin-top: 12vh;
+}
+
+.loginPage_contents_btn {
+  display: block;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #fd5068;
+  color: #fff;
+}
+/*# sourceMappingURL=tops.css.map */
