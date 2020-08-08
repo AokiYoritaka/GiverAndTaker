@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_05_29_075609) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "chat_messages", force: :cascade do |t|
     t.integer "chat_room_id", null: false
     t.integer "user_id", null: false
@@ -46,6 +49,7 @@ ActiveRecord::Schema.define(version: 2020_05_29_075609) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.datetime "current_sign_in_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name", limit: 100, default: "", null: false
